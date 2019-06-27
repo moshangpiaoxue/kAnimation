@@ -76,6 +76,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_alpha_xml:
+                KAnimationUtil.setClickAnimation(v);
                 iv_main.startAnimation(AnimationUtils.loadAnimation(this, R.anim.alpha));
                 break;
             case R.id.btn_alpha_java:

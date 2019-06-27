@@ -10,4 +10,6 @@ public class KContacts {
      * 动画默认持续时间
      */
     public static int defultDuration = 500;
+
+
 }
