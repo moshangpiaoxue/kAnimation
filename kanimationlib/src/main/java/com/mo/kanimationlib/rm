@@ -1,0 +1,36 @@
+
+android动画：1、TweenAnimation  变换动画（视觉上变化，view的位置上吗的还是在原来的位置上）
+                                (1)、Alpha ：渐变透明度动画
+                                (2)、Scale ：渐变尺寸缩放动画
+                                (3)、Translate ：位置移动动画
+                                (4)、Rotate ：旋转动画
+                            属性：setRepeatCount（）==设置动画重复次数
+                                        setRepeatMode()      == 设置动画重复类型（RESTART=正序重复 |REVERSE=倒序重复）
+                        2、FrameAnimation  帧动画
+                                在XML里定义若干图片，连续输出
+                        3、LayoutAnimation  布局动画
+                                   LayoutAnimationController layoutAnimationController =
+                                   new LayoutAnimationController(AnimationUtils.loadAnimation(this, R.anim.scale));
+                                    //item 出现顺序
+                                    layoutAnimationController.setOrder(LayoutAnimationController.ORDER_NORMAL);
+                                    lv_main.setLayoutAnimation(layoutAnimationController);
+                                     lv_main.startLayoutAnimation();
+                        4、PropertyAnimation 属性动画 （属性真实变化，）
+
+  动画插值器：Interpolator
+                        - LinearInterpolator 匀速直线运动
+                        - AccelerateDecelerateInterpolator 中间快两头满
+                        - AccelerateInterpolator 开始慢然后快
+                        - AnticipateInterpolator 开始的时候向后然后向前甩
+                        - AnticipateOvershootInterpolator 开始的时候向后然后向前甩一定值后返回最后的值
+                        - BounceInterpolator 动画结束的时候弹起
+                        - CycleInterpolator 动画循环播放特定的次数，速率改变沿着正弦曲线
+                        - DecelerateInterpolator 在动画开始的地方快然后慢
+                        - OvershootInterpolator 向前甩一定值后再回到原来位置
+
+
+
+
+
+
+

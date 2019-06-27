@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <alpha
+        android:duration="2000"
+        android:fromAlpha="0.1"
+        android:toAlpha="1.0" />
+    <rotate
+        android:duration="2000"
+        android:fromDegrees="0"
+        android:toDegrees="+360"
+        android:startOffset="2000"
+        android:pivotX="50%"
+        android:pivotY="50%"/>
+    <!--从0.1到1.0 持续2秒  然后以自身为中心点 持续2秒 旋转360度-->
+</set>
