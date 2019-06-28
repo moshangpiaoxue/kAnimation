@@ -12,4 +12,9 @@ public class KContacts {
     public static int defultDuration = 500;
 
 
+
+
+
+
+
 }
